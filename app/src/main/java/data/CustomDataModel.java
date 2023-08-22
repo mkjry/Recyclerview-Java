@@ -3,7 +3,6 @@ package data;
 public class CustomDataModel {
     private final int image;
     private final String title;
-
     private final String description;
 
     public CustomDataModel(int i, String title, String description) {

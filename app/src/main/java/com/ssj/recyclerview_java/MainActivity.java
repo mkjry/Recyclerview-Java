@@ -25,9 +25,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void DrawRecyclerView() {
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerviewAdapter = new RecyclerAdapter(loadDummyDataList());
         recyclerView.setLayoutManager(layoutManager);
+
+        recyclerviewAdapter = new RecyclerAdapter(loadDummyDataList());
         recyclerView.setAdapter(recyclerviewAdapter);
     }
 
